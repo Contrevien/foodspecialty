@@ -5,3 +5,12 @@ I developed this app during my internship. It was less of a project and more of 
 Here are a few screen shots of the application!
 
 ![alt text](https://raw.githubusercontent.com/Contrevien/foodspecialty/master/src/assets/display/1.png)
+
+
+![alt text](https://raw.githubusercontent.com/Contrevien/foodspecialty/master/src/assets/display/2.png)
+
+
+![alt text](https://raw.githubusercontent.com/Contrevien/foodspecialty/master/src/assets/display/3.png)
+
+
+![alt text](https://raw.githubusercontent.com/Contrevien/foodspecialty/master/src/assets/display/4.png)
