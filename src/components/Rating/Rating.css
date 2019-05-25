@@ -1,0 +1,60 @@
+.Rating {
+    width: 100%;
+    border-radius: 3px;
+    min-height: 70px;
+    background-color: var(--white);
+    box-shadow: 2px 7px 25px rgba(0, 0, 0, 0.36);
+    padding: 15px 2%;
+    color: var(--black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.Rating hr {
+    margin: 0;
+}
+
+.Rating p {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.Rating-name {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.Rating-num-red {
+    font-weight: bold;
+    color: rgba(255,0,0,0.8);
+    font-size: 20px;
+}
+
+.Rating-num-yellow {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+.Rating-num-green {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--green);
+}
+
+.Rating-comment {
+    margin-left: 10px;
+    font-style: italic;
+    font-weight: 600;
+    color: #777;
+    line-height: 20px;
+}
+
+.Rating-date {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #999;
+    font-weight: 600;
+}

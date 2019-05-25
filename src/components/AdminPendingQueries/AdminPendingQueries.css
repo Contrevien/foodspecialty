@@ -1,0 +1,61 @@
+.APQ-Q {
+    width: 95%;
+    min-height: 150px;
+    border-radius: 2px;
+    box-shadow: 2px 7px 15px rgba(0,0,0,0.26);
+    text-align: left;
+    padding: 0 2%;
+    box-sizing: border-box;
+    padding-bottom: 2%;
+}
+
+.APQ-Q h2 {
+    margin-bottom: 10px;
+}
+
+.APQ-Q p {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+.APQ-Q-p {
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: var(--text-shadow);
+}
+
+.q {
+    color: rgba(255,0,0,0.8);
+    
+}
+
+.r {
+    color: var(--green)
+}
+
+.t {
+    color: var(--yellow)
+}
+
+.APQ-Q input {
+    outline: none;
+    padding: 7px 12px;
+    box-shadow: 2px 7px 15px rgba(0,0,0,0.26);
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin: 10px;
+    min-width: 45%;
+}
+
+.APQ-Q button {
+    padding: 7px 12px;
+    border: none;
+    background: var(--yellow);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    box-shadow: 2px 7px 15px rgba(0,0,0,0.26);
+    cursor: pointer;
+}

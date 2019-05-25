@@ -1,0 +1,77 @@
+.AreYouSure {
+    z-index: 10000;
+    position: fixed;
+    min-height: 30vh;
+    min-width: 40vw;
+    max-width: 40vw;
+    top: calc(50% - 15vh);
+    left: calc(50% - 20vw);
+    background: var(--white);
+    box-shadow: 2px 7px 25px rgba(0,0,0,0.36);
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 1.5%;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.YesOrNo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.YesOrNo button {
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+    .yes {
+        background: var(--green);
+        border: 2px solid var(--green);
+        color: white;
+        
+    }
+
+        .yes:hover {
+            background: white;
+            color: var(--green);
+        }
+
+.no {
+    background: rgba(255,0,0,0.8);
+    border: 2px solid rgba(255,0,0,0.8);
+    color: white;
+}
+
+    .no:hover {
+        background: white;
+        color: rgba(255,0,0,0.8);
+    }
+
+#AreYouSureBD {
+    z-index: 10000;
+}
+
+
+@media only screen and (max-width:900px) {
+    .AreYouSure{
+        min-height: 30vh;
+        min-width: 90vw;
+        max-width: 90vw;
+        top: calc(50% - 15vh);
+        left: calc(50% - 45vw);
+    }
+    .YesOrNo button {
+        width: 130px;
+        height: 50px;
+    }
+}

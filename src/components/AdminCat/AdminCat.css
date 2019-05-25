@@ -1,0 +1,15 @@
+.AdminCat-cats {
+    display: flex;
+    justify-content: center;
+}
+
+.AdminCat-cats p {
+    padding: 7px 10px;
+    border-radius: 2px;
+    background-color: var(--yellow);
+    box-shadow: 2px 7px 10px rgba(0,0,0,0.16);
+    color: var(--white);
+    font-family: Lobster;
+    text-shadow: var(--text-shadow);
+    margin: 10px;
+}

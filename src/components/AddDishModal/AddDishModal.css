@@ -1,0 +1,94 @@
+.AddDishModal {
+    z-index: 9999;
+    position: fixed;
+    min-height: 80vh;
+    max-height: 80vh;
+    min-width: 40vw;
+    max-width: 40vw;
+    top: calc(50% - 40vh);
+    left: calc(50% - 20vw);
+    background: var(--white);
+    box-shadow: 2px 7px 25px rgba(0,0,0,0.36);
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 1.5%;
+    font-weight: 600;
+    overflow-y: scroll;
+    padding-bottom: 2%;
+}
+input[type="file"] {
+    display: none;
+}
+.Dish-image-upload {
+    min-width: 100px;
+    max-width: 100px;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 22px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #444;
+    cursor: pointer;
+}
+
+.Dish-image-preview {
+    max-height: 100px;
+    max-width: 300px;
+    margin: 10px auto;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.Dish-image-remove {
+    margin-top: -25px;
+    color: #999;
+    cursor: pointer;
+}
+
+    .Dish-image-remove:hover {
+        text-decoration: underline;
+    }
+
+    .Dish-image-upload + input:hover {
+        cursor: pointer;
+    }
+
+    .Dish-image-upload::-webkit-file-upload-button {
+        margin-top: 27px;
+    }
+
+
+        #ADDM {
+            margin-bottom: 30px;
+        }
+
+
+@media only screen and (max-width: 900px) {
+    .AddDishModal {
+        min-width: 90vw;
+        max-width: 90vw;
+        top: calc(50% - 40vh);
+        left: calc(50% - 45vw);
+    }
+
+        .AddDishModal select {
+            min-width: 80%;
+            max-width: 80%;
+        }
+
+        .AddDishModal button {
+            min-width: 80%;
+            max-width: 80%;
+        }
+
+        #ADDM {
+            min-width: 80%;
+            max-width: 80%;
+        }
+}

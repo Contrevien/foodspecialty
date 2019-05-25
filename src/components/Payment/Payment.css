@@ -1,0 +1,158 @@
+.Payment {
+    z-index: 9999;
+    position: fixed;
+    min-height: 80vh;
+    min-width: 40vw;
+    top: calc(50% - 40vh);
+    left: calc(50% - 20vw);
+    background: var(--white);
+    box-shadow: 2px 7px 25px rgba(0,0,0,0.36);
+    border-radius: 4px;
+}
+
+.Payment h2 {
+    margin-bottom: 10px;
+}
+
+.Payment-dish {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+    .Payment-dish p {
+        font-family: Lobster;
+        font-size: 19px;
+    }
+
+    .Payment-qty {
+        display: flex;
+    }
+
+    .Payment-qty p {
+        font-weight: 600;
+        color: var(--black);
+        font-family: 'Segoe UI';
+    }
+
+    .Payment-qty button {
+        background: transparent;
+        border: none;
+        margin: 0 10px;
+        margin-top: -3px;
+        font-weight: bold;
+        outline: none;
+        font-size: 30px;
+        font-family: 'Segoe UI';
+        cursor: pointer;
+        color: var(--yellow);
+        text-shadow: var(--black);
+    }
+
+.Payment-delivery-choice {
+    width: 84%;
+    text-align: left;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.Payment-delivery-choice div {
+    margin: 7px;
+}
+
+.Payment hr {
+    max-width: 90%;
+    margin-top: 30px;
+}
+
+.Payment-total {
+    font-weight: 600;
+}
+
+
+
+.Payment-choice {
+    background: var(--white);
+    border: none;
+    box-shadow: 2px 7px 15px rgba(0,0,0,0.26);
+    border-radius: 2px;
+    font-size: 19px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    min-width: 100px;
+    padding: 10px 0;
+    margin: 0 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    outline: none;
+}
+
+.Payment-choice-selected {
+    background: var(--yellow);
+}
+
+.Payment-type input {
+    margin-bottom: 15px;
+    min-width: 90%;
+    padding: 9px 12px;
+    box-sizing: border-box;
+    min-height: 45px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.36);
+    border-radius: 3px;
+    transition: all 0.15s;
+}
+
+    .Payment-type input:focus {
+        transform: scale(1.01);
+    }
+
+.pay {
+    min-width: 400px;
+    min-height: 45px;
+    padding: 9px 12px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    background: var(--black);
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: 1px solid var(--black);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.26);
+    cursor: pointer;
+    transition: all 0.15s;
+    outline: none;
+}
+
+    .pay:hover {
+        transform: scale(1.02);
+        box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+    }
+
+.Payment-error-message {
+    font-weight: bold;
+    color: rgba(255,0,0,0.8);
+}
+
+@media only screen and (max-width:900px) {
+    .Payment {
+        max-height: 70%;
+        min-width: 95%;
+        max-width: 95%;
+        top: 10%;
+        left: 2.5%;
+    }
+
+    .pay {
+        min-width: 330px;
+        max-width: 330px;
+    }
+}

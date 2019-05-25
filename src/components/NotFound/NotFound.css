@@ -1,0 +1,16 @@
+.NotFound {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    font-family: Lobster;
+    font-size: 55px;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+
+

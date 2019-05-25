@@ -1,0 +1,177 @@
+.DetailedDish {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    background: #ddd;
+}
+
+.DetailedDish-display {
+    min-height: 95vh;
+    max-height: 95vh;
+    min-width: calc(100vw - 150px);
+    background: var(--white);
+    box-shadow: 2px 2px 25px rgba(0,0,0,0.3);
+    margin-left: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow-y: scroll;
+    padding-bottom: 40px;
+}
+
+.DetailedDish-map {
+    width: 95%;
+    margin-top: 25px;
+    min-height: 50vh;
+    background-color: #aaa;
+    border-radius: 4px;
+}
+
+.DetailedDish-details {
+    text-align: left;
+    width: 90%;
+    margin-top: 25px;
+    position: relative;
+    line-height: 0;
+}
+
+    .DetailedDish-details hr {
+        margin: 60px 0;
+    }
+
+.DetailedDish-desc {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 25px;
+    max-width: 50%;
+    line-height: 17px;
+}
+
+
+.DetailedDish-type {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+    .DetailedDish-details h1 {
+        font-family: Lobster;
+        letter-spacing: 2px;
+        font-size: 40px;
+        line-height: 40px;
+        display: inline-block;
+    }
+
+.DetailedDish-rating {
+    display: inline-block !important;
+    margin-left: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 50%;
+}
+
+.DetailedDish-btn {
+    width: 100%;
+    min-height: 45px;
+    padding: 15px 12px;
+    margin: 50px 0; 
+    border-radius: 3px;
+    font-size: 20px;
+    background: #34a33d;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: 1px solid #34a33d;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.26);
+    cursor: pointer;
+    transition: all 0.1s;
+    outline: none;
+}
+
+    .DetailedDish-btn:hover {
+        box-shadow: 2px 2px 25px rgba(0,0,0,0.36);
+    }
+
+    .DetailedDish-btn:disabled {
+        color: var(--white);
+        background: #777;
+        border: 1px solid #777;
+        cursor: default;
+    }
+
+        .DetailedDish-btn:disabled:hover {
+            box-shadow: 2px 2px 15px rgba(0,0,0,0.26);
+        }
+
+       .DetailedDish-food-img {
+            max-height: 180px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-radius: 4px;
+        }
+
+.DetailedDish h2 {
+    margin-bottom: 40px;
+}
+
+.DetailedDish-seller {
+    line-height: 5px;
+    font-weight: 600;
+    color: #444;
+}
+
+@media only screen and (max-width: 900px) {
+    .DetailedDish {
+        flex-direction: column;
+    }
+
+    .DetailedDish-display {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .DetailedDish-desc {
+        line-height: 17px;
+    }
+
+}
+
+.DD-price {
+    font-family: 'Segoe UI';
+    letter-spacing:0px;
+}
+
+.Backdrop {
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 640px) {
+    .DetailedDish-display {
+        flex-direction: column-reverse;
+    }
+    .DetailedDish-food-img {
+        position: relative;
+        width: 100%;
+        max-height: none;
+        height: auto;
+    }
+    .DetailedDish-details h1 {
+        font-size: 27px;
+    }
+}

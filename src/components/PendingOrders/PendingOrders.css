@@ -1,0 +1,33 @@
+.PendingOrders {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+.PendingOrders-back {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    max-height: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .PendingOrders {
+        display: block;
+        padding-top: 20%;
+        box-sizing: border-box;
+    }
+
+    .PendingOrders-back {
+        left: 10px;
+    }
+    }

@@ -1,0 +1,1 @@
+Scaffold-DbContext -Connection "Data Source =(localdb)\mssqllocaldb;Initial Catalog=FoodSpeciality;Integrated Security=true" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -f

@@ -1,0 +1,84 @@
+.VendorDetailedDish-modal {
+    z-index: 9999;
+    position: fixed;
+    min-height: 86vh;
+    min-width: 40vw;
+    max-width: 40vw;
+    top: calc(50% - 43vh);
+    left: calc(50% - 20vw);
+    background: var(--white);
+    box-shadow: 2px 7px 25px rgba(0,0,0,0.36);
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 1.5%;
+    font-weight: 600;
+}
+
+.VDDM p {
+    margin-left: 7%;
+}
+
+.VDDM select {
+    margin-bottom: 15px;
+    min-width: 400px;
+    padding: 9px 12px;
+    box-sizing: border-box;
+    min-height: 45px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.36);
+    border-radius: 3px;
+    transition: all 0.15s;
+}
+
+.VDDM-error-message {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(255,0,0,0.8);
+    text-shadow: var(--text-shadow);
+}
+
+#VDDM-btn {
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+    font-weight: bold;
+}
+
+#VDDM-btn:disabled {
+    background: #777;
+    border-color: #777;
+}
+
+#VDDM-btn:disabled:hover {
+    box-shadow: initial;
+    transform: none;
+    cursor: default;
+}
+
+#VDDM-btn-delete {
+    background: rgba(255,0,0,0.8);
+    border-color: rgba(255,0,0,0.8);
+    color: white;
+}
+
+@media only screen and (max-width:900px) {
+    .VendorDetailedDish-modal {
+        min-height: 70vh;
+        min-width: 90vw;
+        max-width: 90vw;
+        top: calc(50% - 35vh);
+        left: calc(50% - 45vw);
+    }
+
+    .VDDM select {
+        min-width: 300px;
+        max-width: 300px;
+    }
+ }

@@ -1,0 +1,34 @@
+.OrderedBubble {
+    background: var(--black);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 2px 7px 15px rgba(0,0,0,0.26);
+    min-width: 90px;
+    min-height: 90px;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    font-family: Lobster;
+    font-size: 25px;
+    text-shadow: var(--text-shadow);
+    color: var(--white);
+    cursor: pointer;
+    outline: none;
+}
+
+    .OrderedBubble:hover {
+        box-shadow: 2px 7px 25px rgba(0,0,0,0.46);
+    }
+
+
+@keyframes bouncer {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

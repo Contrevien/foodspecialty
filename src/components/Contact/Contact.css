@@ -1,0 +1,128 @@
+.Contact {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    background: #ddd;
+}
+
+.Contact-display {
+    min-height: 95vh;
+    min-width: calc(100vw - 150px);
+    background: var(--white);
+    box-shadow: 2px 2px 25px rgba(0,0,0,0.3);
+    margin-left: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Contact-input {
+    margin-bottom: 15px;
+    min-width: 400px;
+    padding: 9px 12px;
+    box-sizing: border-box;
+    min-height: 45px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.36);
+    border-radius: 3px;
+    transition: all 0.15s;
+}
+
+    .Contact-input:focus {
+        transform: scale(1.01);
+    }
+
+.Contact select {
+    margin-bottom: 15px;
+    min-width: 400px;
+    padding: 9px 12px;
+    box-sizing: border-box;
+    min-height: 45px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.36);
+    border-radius: 3px;
+    transition: all 0.15s;
+}
+
+.Contact-btn {
+    min-width: 400px;
+    min-height: 45px;
+    padding: 9px 12px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    background: var(--black);
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: 1px solid var(--black);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.26);
+    cursor: pointer;
+    transition: all 0.15s;
+    outline: none;
+}
+
+    .Contact-btn:hover {
+        transform: scale(1.02);
+        box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+    }
+
+.Contact-display h2 {
+    margin-bottom: 25px;
+}
+
+.Contact-error-message {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(255,0,0,0.8);
+    text-shadow: var(--text-shadow);
+}
+
+.Contact-response {
+    font-weight: 600;
+}
+
+.Contact-awaiting { 
+    color: var(--yellow);
+}
+
+.Contact-solved {
+    color: var(--green);
+}
+
+@media only screen and (max-width:900px) {
+    .Contact {
+        flex-direction: column;
+    }
+
+    .Contact-display {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .Contact-input, .Contact select {
+        min-width: 300px;
+    }
+
+    .Contact-btn {
+        min-width: 300px;
+    }
+}

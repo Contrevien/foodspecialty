@@ -1,0 +1,12 @@
+.VendorHome {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    background: #ddd;
+}
+
+@media only screen and (max-width: 900px) {
+    .VendorHome {
+        flex-direction: column;
+    }
+}
